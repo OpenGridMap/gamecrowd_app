@@ -1,0 +1,40 @@
+<ion-view view-title="Open Grid Map" ng-controller="LoginCtrl" >
+   <ion-content ng-hide="authData.google">
+  <div class="row" style="margin-bottom: 30%;width:100%!important">
+  <img src="img/open_grid_map_logo_final.png" style="margin:0 auto;padding-top: 10%">
+</div>
+<div class="row" style="width:100%!important">
+    <button class=" button button-assertive button-full icon ion-social-googleplus" ng-click="login('google')" style="margin:0 auto"> Sign in with Google+</button>
+</div>
+  </ion-content>
+  <ion-content ng-show="authData.google">
+    <div class="row">
+      <a class="col-50 special" href = "#/app/photo" ng-click="setType('Transformer')">
+        <div style="">
+          <img class="image_icon" src="img/transformer.png"/>
+        </div>
+        <span class="target">Transformer</span>
+      </a>
+      <a class="col-50 special" href = "#/app/photo"  ng-click="setType('Substation')">
+        <img class="image_icon" src="img/substation.png"/>
+        <span class="target">Substation</span>
+      </a>
+    </div>
+    <div class="row">
+      <a class="col-50 special" href = "#/app/photo"  ng-click="setType('Generator')">
+        <img class="image_icon" src="img/power_station.png"/>
+        <span class="target">Generator</span>
+      </a>
+      <a class="col-50 special" href = "#/app/photo"  ng-click="setType('PV and Wind Farm')">
+        <img class="image_icon" src="img/pv_wind.png"/>
+        <span class="target">PV and Wind Farm</span>
+      </a>
+    </div>
+    <div class="row">
+      <a class="col-50 special" href = "#/app/photo"  ng-click="setType('Other')">
+        <img class="image_icon" src="img/lightening_logo.png"/>
+        <span class="target">Other</span>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

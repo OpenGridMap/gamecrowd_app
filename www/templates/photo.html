@@ -1,0 +1,21 @@
+<h1 class="title">Photos</h1>
+</ion-header-bar>
+<ion-content  padding="true">
+</button>
+<div style="text-align: center">
+<h3 > The Type selected for the Picture is a  {{type}} </h3>
+	<span>{{point}}</span><br>
+	<span>Longitude :{{longitude}}</span><br>
+	<span>Latitude : {{latitude}}</span><br>
+	<span>Accuracy : {{accuracy /100 }}</span><br>
+	<img ng-src="{{imgURI}}" id="srcImage"  style="display: block; margin: 0 auto; "/><br/>
+	
+	<progress style="height:20px" low=".25" optimum=".80" high=".75" value="{{accuracy /100 }}"></progress><br>
+	<div ng-show="retakePicture">
+		<p style="color:red; font:14px"> The geo accuracy of the picture is low please re-take another picture </p>
+		<button class="button button-full button-assertive" ng-click="retake()">Retake Picture</button></br>
+	</div>
+	<button class="button button-full button-positive" ng-click="upload()">Upload</button>
+</div>
+<span>{{exception}}</span>
+</ion-content>

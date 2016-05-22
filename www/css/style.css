@@ -1,0 +1,54 @@
+ionic-header-bar{
+
+  }/* Empty. Add your own CSS if you like */
+
+ion-header-bar, div.title {
+  color: white !important;
+background-color: black !important;̧
+}
+
+
+
+.sideMenu h1 , button {
+  color: white !important;
+  text-align: center !important;
+}
+
+.special {
+  background: #4DB6AC;
+  margin : 6px;
+  height: 150px;
+  border-radius: 3px;
+}
+
+.row {
+  width: 93% !important;
+}
+
+.target {
+  position:relative;
+  color: #2A635E !important;
+  text-decoration: none;
+  margin:10px;
+  font-size: 10px;
+}
+.image_icon{
+  height: 77%;
+  width: 100%;
+}
+
+.about_text{
+  margin : 20px;
+}
+
+a.special{
+  text-decoration: none !important;
+}
+
+progress {
+  width: 100%;
+  height: 25px;
+  -webkit-appearance: none; /* Reset appearance */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
